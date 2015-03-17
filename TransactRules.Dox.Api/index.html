@@ -1,0 +1,72 @@
+﻿<html data-ng-app="DoxRulesApp">
+<head>
+    
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
+    <title>DoxConfig</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dox.css" />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+    <div id="page">
+        <header class="container" data-ng-controller="navigationController">
+            <div id="menu" class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button class="btn btn-success navbar-toggle" data-ng-click="navbarExpanded = !navbarExpanded">
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <div id="logo">
+                        <a href='#/'>
+                            <h4>DoxRules</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse" data-collapse="!navbarExpanded">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li data-ng-class="{'active':isActive('/documents')}"><a href="#/documents">Documents</a></li>
+                        <li data-ng-class="{'active':isActive('/documentTemplates')}"><a href="#/documentTemplates">Templates</a></li>
+                        <li data-ng-class="{'active':isActive('/about')}"><a href="#/about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section id="body" class="container">
+            <div data-ng-view=""></div>
+        </section>
+        <hr />
+        <footer class="container">
+            <p>Created by Igor Music</p>
+        </footer>
+    </div>
+    <!-- 3rd party libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="bower_components/angular-smart-table/dist/smart-table.min.js"></script>
+    <script src="bower_components/ngUpload/ng-upload.min.js"></script>
+
+    <!-- Load app main script -->
+    <script src="app/app.js"></script>
+    <!-- Load services -->
+    <script src="app/services/configService.js"></script>
+    <!-- Load controllers -->
+    <script src="app/controllers/documentTemplateController.js"></script>
+    <script src="app/controllers/documentController.js"></script>
+    <script src="app/controllers/navigationController.js"></script>
+    <script src="app/controllers/aboutController.js"></script>
+    <!-- Load custom filters -->
+
+    <!-- Load custom directives -->
+
+</body>
+</html>
+
+
+

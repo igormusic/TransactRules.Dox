@@ -1,0 +1,50 @@
+﻿<div data-ng-controller="documentTemplateController" >
+    <div>
+        <h3>Load Document Templates</h3>
+    </div>
+
+    <div class="container">        
+        <form role="form" ng-upload="uploadComplete(content)" action="/api/DocumentTemplates">
+            <div class="form-group">
+                <label for="templateName">Template Name:</label>
+                <input type="text" name="templateName"  class="form-control" id="email" placeholder="Enter template name" ng-model="templateName">
+            </div>
+
+            <!--<span class="btn btn-sm btn-primary">
+                <i class="glyphicon glyphicon-plus"></i>Browse-->
+                <input type="file" name="file" accept="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+            <!--</span>-->
+
+            <input type="submit" class="btn btn-success" value="Save" ng-disabled="$isUploading" />
+
+            <!--<button type="button" ng-click="addTemplate(row)" class="btn btn-success">
+                Save
+            </button>-->
+
+        </form>
+    </div>
+
+    <div class="alert alert-info">Server Response: {{response | json}}</div>
+
+    <div>
+        <h3>Document Templates</h3>
+    </div>
+
+    <table st-table="rowCollection" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Template Name</th>
+                <th>File Name</th>
+                <th>Size</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in documentTemplates">
+                <td>{{row.templateName}}</td>
+                <td>{{row.fileName}}</td>
+                <td>{{row.size | number:0}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>

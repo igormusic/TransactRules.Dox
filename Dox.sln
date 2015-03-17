@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactRules.Core", "TransactRules.Core\TransactRules.Core.csproj", "{D4E18F7D-6E2F-4FAC-8982-1BA84AE963BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactRules.Core.NHibernate", "TransactRules.Core.nHibernate\TransactRules.Core.NHibernate.csproj", "{4FE5B0AB-8475-46DC-9634-8BE5BE7260A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactRules.Dox", "TransactRules.Dox\TransactRules.Dox.csproj", "{D0D54F43-C094-4739-9670-02CE864FB3F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactRules.Dox.Api", "TransactRules.Dox.Api\TransactRules.Dox.Api.csproj", "{C37223E9-DF78-4379-894E-F2F4D4891902}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{635EB4E2-0738-4316-B99C-6B05593DC2CB}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{2011864C-F3A2-49C2-81A7-870264A929FB}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\TransactRulesDoxApi-WAWS-dev.json = PublishScripts\Configurations\TransactRulesDoxApi-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactRules.Dox.Test", "TransactRules.Dox.Test\TransactRules.Dox.Test.csproj", "{37F497BE-A501-442B-BBAD-6AE53FD338BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactRules.Dox.OpenOffice", "TransactRules.Dox.OpenOffice\TransactRules.Dox.OpenOffice.csproj", "{6FBC26AF-C2EF-409C-890C-C2077211990D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactRules.Dox.DataContracts", "TransactRules.Dox.DataContracts\TransactRules.Dox.DataContracts.csproj", "{E9C12664-3466-44D0-B065-8C740DD643E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactRules.Dox.Mapping", "TransactRules.Dox.Mapping\TransactRules.Dox.Mapping.csproj", "{3B48737A-AA42-4514-9756-A7859F5F4490}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactRules.Core.Mock", "TransactRules.Core.Mock\TransactRules.Core.Mock.csproj", "{5E471234-F9A4-4D8D-A14C-A39271BB3EBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4E18F7D-6E2F-4FAC-8982-1BA84AE963BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E18F7D-6E2F-4FAC-8982-1BA84AE963BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E18F7D-6E2F-4FAC-8982-1BA84AE963BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E18F7D-6E2F-4FAC-8982-1BA84AE963BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE5B0AB-8475-46DC-9634-8BE5BE7260A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE5B0AB-8475-46DC-9634-8BE5BE7260A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE5B0AB-8475-46DC-9634-8BE5BE7260A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE5B0AB-8475-46DC-9634-8BE5BE7260A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D54F43-C094-4739-9670-02CE864FB3F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D54F43-C094-4739-9670-02CE864FB3F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D54F43-C094-4739-9670-02CE864FB3F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D54F43-C094-4739-9670-02CE864FB3F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C37223E9-DF78-4379-894E-F2F4D4891902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37223E9-DF78-4379-894E-F2F4D4891902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37223E9-DF78-4379-894E-F2F4D4891902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37223E9-DF78-4379-894E-F2F4D4891902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37F497BE-A501-442B-BBAD-6AE53FD338BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37F497BE-A501-442B-BBAD-6AE53FD338BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37F497BE-A501-442B-BBAD-6AE53FD338BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37F497BE-A501-442B-BBAD-6AE53FD338BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FBC26AF-C2EF-409C-890C-C2077211990D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FBC26AF-C2EF-409C-890C-C2077211990D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FBC26AF-C2EF-409C-890C-C2077211990D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FBC26AF-C2EF-409C-890C-C2077211990D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9C12664-3466-44D0-B065-8C740DD643E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9C12664-3466-44D0-B065-8C740DD643E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9C12664-3466-44D0-B065-8C740DD643E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9C12664-3466-44D0-B065-8C740DD643E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B48737A-AA42-4514-9756-A7859F5F4490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B48737A-AA42-4514-9756-A7859F5F4490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B48737A-AA42-4514-9756-A7859F5F4490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B48737A-AA42-4514-9756-A7859F5F4490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E471234-F9A4-4D8D-A14C-A39271BB3EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E471234-F9A4-4D8D-A14C-A39271BB3EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E471234-F9A4-4D8D-A14C-A39271BB3EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E471234-F9A4-4D8D-A14C-A39271BB3EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2011864C-F3A2-49C2-81A7-870264A929FB} = {635EB4E2-0738-4316-B99C-6B05593DC2CB}
+	EndGlobalSection
+EndGlobal
